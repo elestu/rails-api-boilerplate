@@ -9,6 +9,9 @@ gem 'puma', '~> 5.0'
 gem 'rack', '~> 2.2.3'
 gem 'rack-cors', '~> 1.1.1'
 
+# Rack middleware for blocking & throttling abusive requests
+gem 'rack-attack'
+
 # Database
 gem 'pg', '~> 1.2.3'
 
@@ -70,6 +73,3 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-
-# Rack middleware for blocking & throttling abusive requests
-gem 'rack-attack'
