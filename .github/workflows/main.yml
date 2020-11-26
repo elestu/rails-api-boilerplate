@@ -12,7 +12,9 @@ jobs:
         package_manager: [bundler]
     steps:
       - uses: actions/checkout@v1
-
+      - run: |
+          gem install bundler
+          bundle config path vendor/bundle
       - name: Install
         uses: docker://dependabot/dependabot-core:latest
         with:
