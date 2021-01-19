@@ -58,14 +58,14 @@ group :development do
   gem 'reek', '~> 6.0.2', require: false
   gem 'rubocop', '~> 1.3.1', require: false
   gem 'rubocop-rails', '~> 2.9.1', require: false
-  gem 'rubocop-rspec', '~> 2.0.0', require: false
+  gem 'rubocop-rspec', '~> 2.1.0', require: false
   gem 'spring', '~> 2.1.1'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
   gem 'rspec-json_expectations', '~> 2.2.0'
-  gem 'shoulda-matchers', '~> 4.4.1'
+  gem 'shoulda-matchers', '~> 4.5.0'
   gem 'simplecov', '~> 0.19.1'
   gem 'webmock', '~> 3.10.0'
 end
